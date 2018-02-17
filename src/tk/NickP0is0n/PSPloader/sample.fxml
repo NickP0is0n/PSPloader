@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.152" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tk.NickP0is0n.PSPloader.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <StackPane fx:id="stackPane" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <AnchorPane fx:id="apppane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a86ce" height="607.0" layoutX="660.0" layoutY="-4.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="341.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="600.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="663.0" />
+                  <Text fill="WHITE" layoutX="734.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PSPloader">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="786.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nickp0is0n.tk">
+                     <font>
+                        <Font name="Segoe UI Light" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="41.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите путь к ISO файлу игры:" wrappingWidth="575.728515625">
+                     <font>
+                        <Font name="Segoe UI Light" size="38.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="isofield" editable="false" focusColor="#0a86ce" layoutX="41.0" layoutY="138.0" prefHeight="25.0" prefWidth="443.0">
+                     <font>
+                        <Font name="Segoe UI Light" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="isobutton" layoutX="500.0" layoutY="137.0" onAction="#isoclick" prefHeight="37.0" prefWidth="101.0" ripplerFill="WHITE" style="-fx-background-color: #0a86ce;" text="Обзор" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="41.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите вашу Memory Stick:" wrappingWidth="575.728515625">
+                     <font>
+                        <Font name="Segoe UI Light" size="38.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="msbutton" layoutX="202.0" layoutY="300.0" onAction="#msclick" prefHeight="18.0" prefWidth="165.0" ripplerFill="WHITE" style="-fx-background-color: #0a86ce;" text="Обзор" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="27.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="installbutton" layoutX="214.0" layoutY="503.0" onAction="#installclick" prefHeight="57.0" prefWidth="236.0" ripplerFill="WHITE" style="-fx-background-color: #0a86ce;" text="Установить игру" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="27.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
