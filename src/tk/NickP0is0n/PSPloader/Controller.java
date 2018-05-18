@@ -62,6 +62,7 @@ public class Controller {
     @FXML
     void installclick(ActionEvent event) {
         if(isofield.getText().equalsIgnoreCase("")) ShowMaterialMessage("Ошибка", "Укажите путь к файлу ISO.");
+        else if(SelectedDir.getAbsolutePath().equalsIgnoreCase("")) ShowMaterialMessage("Ошибка", "Укажите вашу карту памяти.");
         else
         {
             Path output = Paths.get(SelectedDir.toPath() + "\\ISO\\" + SelectedFile.getName());
