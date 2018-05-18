@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.152" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tk.NickP0is0n.PSPloader.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tk.NickP0is0n.PSPloader.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -63,6 +63,11 @@
                   <JFXButton fx:id="installbutton" layoutX="214.0" layoutY="503.0" onAction="#installclick" prefHeight="57.0" prefWidth="236.0" ripplerFill="WHITE" style="-fx-background-color: #0a86ce;" text="Установить игру" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Segoe UI Light" size="27.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="686.0" layoutY="156.0" prefHeight="39.0" prefWidth="306.0" ripplerFill="WHITE" style="-fx-background-color: #0a86ce;" text="Установить кастомную прошивку" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="18.0" />
                      </font>
                   </JFXButton>
                </children>
